@@ -1,3 +1,4 @@
-# card_andriod
+
+MVVM + AndroidX
 
 验卡APP
