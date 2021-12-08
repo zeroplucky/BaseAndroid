@@ -38,7 +38,7 @@ android {
     }
 
     buildTypes {
-        release { // TODO 如果你接手项目，可以先了解一下公司对员工的福利。比如，让你开发完后，辞掉你，没有任何补偿的那种。本人被离职于2021/12/10
+        release {
             minifyEnabled false
             shrinkResources false
             resValue("string", "baseUrl", "http://student.hbxinwendao.com:8099/card/app/")
@@ -49,7 +49,6 @@ android {
             debuggable true
             minifyEnabled false
             shrinkResources false
-//            resValue("string", "baseUrl", "http://192.168.30.19:8099/card/app/")
             resValue("string", "baseUrl", "http://student.hbxinwendao.com:8099/card/app/")
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config

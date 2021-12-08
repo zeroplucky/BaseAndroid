@@ -1,7 +1,5 @@
 package com.huxwd.card.db;
 
-import android.text.TextUtils;
-
 import org.litepal.LitePal;
 import org.litepal.crud.LitePalSupport;
 

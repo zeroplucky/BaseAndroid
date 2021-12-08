@@ -5,13 +5,8 @@ import android.app.Application;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
-import android.util.Log;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.huxwd.card.data.Responze;
 import com.huxwd.card.reciever.NetworkReceiver;
 import com.huxwd.card.utils.ActivityLifecycleCallbacksImpl;
 import com.huxwd.card.utils.MMKVUtil;
@@ -25,18 +20,6 @@ import com.umeng.commonsdk.UMConfigure;
 
 import org.litepal.LitePal;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Proxy;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
-
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
 
 /**
  * 创建日期：2021/9/23 17:03
@@ -68,9 +51,9 @@ public class App extends Application {
         OkGo.getInstance().init(instance).setCacheMode(CacheMode.REQUEST_FAILED_READ_CACHE);
         LitePal.initialize(instance);
         VibrateUtil.init(instance);
-        CrashReport.initCrashReport(getApplicationContext(), "d353ed5cae", true);
-        UMConfigure.preInit(getApplicationContext(), "6191c0f6e0f9bb492b5aa1c6", "um");
-        UMConfigure.init(getApplicationContext(), "6191c0f6e0f9bb492b5aa1c6", "um", UMConfigure.DEVICE_TYPE_PHONE, "");
+        CrashReport.initCrashReport(getApplicationContext(), "d353ed5ca1", true);
+        UMConfigure.preInit(getApplicationContext(), "6191c0f6e0f9bb492b5aa1c1", "um");
+        UMConfigure.init(getApplicationContext(), "6191c0f6e0f9bb492b5aa1c1", "um", UMConfigure.DEVICE_TYPE_PHONE, "");
         MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.AUTO);
     }
 

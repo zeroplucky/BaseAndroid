@@ -42,7 +42,7 @@ public class MainActivity extends BaseActivity<MainViewModel> {
         setContentView(R.layout.activity_main);
         initView();
         addListenerAndObserver();
-        checkNewVersion();
+        viewModel.checkNewVersion(mContext);
         viewModel.getClassroomList();
     }
 
@@ -126,12 +126,4 @@ public class MainActivity extends BaseActivity<MainViewModel> {
         spanStr.setSpan(new ForegroundColorSpan(Color.RED), length, content.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         return spanStr;
     }
-
-    /*
-     * 检测新版本
-     * */
-    public void checkNewVersion() {
-        viewModel.checkNewVersion(mContext);
-    }
-
 }
