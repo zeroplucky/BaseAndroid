@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="card_xwd" />
+    <version value="26" />
+    <list>
+        <mapping class="com.huxwd.card.db.BlackListdb" />
+        <mapping class="com.huxwd.card.db.RoomListDb" />
+        <mapping class="com.huxwd.card.db.CheckCardDb" />
+        <mapping class="com.huxwd.card.db.LoseRecorddb" />
+        <mapping class="com.huxwd.card.db.Attendeddb" />
+        <mapping class="com.huxwd.card.db.BackVerifydb" />
+    </list>
+
+</litepal>

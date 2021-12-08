@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">验卡系统</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_block_not_in_sector">错误:该扇区不包含给定数量的块。</string>
+    <string name="info_error_writing_block">错误:只读块或密钥没有写入权限</string>
+    <string name="info_write_successful">数据写入完成</string>
+    <string name="info_data_location_not_set">错误:未指定块或扇区</string>
+    <string name="info_sector_out_of_range">错误:该扇区不在范围内</string>
+    <string name="info_block_out_of_range">错误:该块不在范围内</string>
+    <string name="info_not_16_byte">错误:数据必须为16字节(32个字符)长</string>
+    <string name="info_not_hex_data">错误:数据必须为十六进制(0-9,A-F)</string>
+    <string name="info_touch_again">请重新贴卡</string>
+    <string name="info_invalidity">无效卡~</string>
+    <string name="info_check_card_successful">验卡成功</string>
+
+    <string name="action_nfc">转到NFC设置</string>
+    <string name="dialog_nfc_not_enabled">未启用NFC,请到设置中启用。</string>
+    <string name="dialog_nfc_not_enabled_title">NFC未启用</string>
+
+    <string name="tt2">请将学员卡置于手机背面本区域附近</string>
+    <string name="tt1">请将抵押卡置于手机背面本区域附近</string>
+
+    <string name="tt3">重复上课，反抵失败</string>
+    <string name="dialog_premisson_not_enabled">请到设置中开启【读写】权限,否则程序将无法使用！</string>
+</resources>

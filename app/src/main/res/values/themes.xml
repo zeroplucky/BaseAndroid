@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CardIssuerAndroid" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/text_black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="SnackBar" />
+
+    <style name="SnackBar.SnackBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">80dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/sb__snack_bkgnd</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+    <style name="SnackBar.Container">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="SnackBar.Message">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/sb__horizontal_margin</item>
+        <item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/sb__horizontal_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/sb__horizontal_margin</item>
+        <item name="android:layout_marginEnd" tools:ignore="NewApi">@dimen/sb__horizontal_margin
+        </item>
+        <item name="android:layout_marginTop">@dimen/sb__vertical_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/sb__vertical_margin_bottom</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="SnackBar.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/sb__horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/sb__horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/sb__vertical_margin_top</item>
+        <item name="android:paddingBottom">@dimen/sb__vertical_margin_bottom</item>
+        <item name="android:textColor">@color/sb__button_text_color</item>
+        <item name="android:editable">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps" tools:ignore="NewApi">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Translucent">
+        <item name="android:windowEnterAnimation">@anim/translucent_enter</item>
+        <item name="android:windowExitAnimation">@anim/translucent_exit</item>
+    </style>
+
+    <!--宽度和屏幕一致dialog-->
+    <style name="Dialog_full">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>            <!--是否有边框-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>         <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item>       <!--是否半透明-->
+        <item name="android:windowContentOverlay">@null</item>      <!--是否有遮盖-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>        <!--背景是否模糊显示-->
+    </style>
+
+</resources>

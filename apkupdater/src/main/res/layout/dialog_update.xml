@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_white_radius_6"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginRight="16dp"
+                android:overScrollMode="never">
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    tools:text="新版本大小新版本大小新版本大小" />
+            </ScrollView>
+
+            <com.sunfusheng.NumberProgressBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/np_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                app:progress_reached_color="#2876CA"
+                app:progress_text_color="#5B8EDA"
+                app:progress_unreached_color="#D1CFCB" />
+
+            <TextView
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/background_gradient_btn"
+                android:gravity="center"
+                android:text="升级"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/text_close"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center_horizontal"
+                android:text="稍后更新" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/beijing_1" />
+
+    </RelativeLayout>
+</LinearLayout>
